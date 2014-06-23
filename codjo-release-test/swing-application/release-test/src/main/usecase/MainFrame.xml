@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<release-test name="MainFrame"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="http://test-release.xsd"
+              enabled="true">
+
+    <description>Test the main screen</description>
+    <gui-test>
+        <group name="test initial table">
+            <assertFrame matching="equals" title="Swing application"/>
+            <assertTable name="table" expected="red" row="0" column="English" background="255,0,0"/>
+            <assertTable name="table" expected="rouge" row="0" column="Fran&#231;ais" background="255,0,0"/>
+
+            <assertEnabled expected="true" name="changeColor"/>
+            <click name="changeColor"/>
+
+            <assertTable name="table" expected="green" row="0" column="0" background="0,255,0"/>
+            <assertTable name="table" expected="vert" row="0" column="1" background="0,255,0"/>
+        </group>
+    </gui-test>
+</release-test>
