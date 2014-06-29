@@ -52,21 +52,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/codjo-examples-pom.iml" filepath="$PROJECT_DIR$/codjo-examples-pom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/codjo-release-test.iml" filepath="$PROJECT_DIR$/codjo-release-test/codjo-release-test.iml" group="codjo-release-test and modules" />
-      <module fileurl="file://$PROJECT_DIR$/release-test/release-test.iml" filepath="$PROJECT_DIR$/release-test/release-test.iml" group="release-test and modules" />
-      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/swing-application/gui/swing-application-gui.iml" filepath="$PROJECT_DIR$/codjo-release-test/swing-application/gui/swing-application-gui.iml" group="codjo-release-test and modules/swing-application-pom and modules" />
-      <module fileurl="file://$PROJECT_DIR$/release-test/swing-application/gui/swing-application-gui.iml" filepath="$PROJECT_DIR$/release-test/swing-application/gui/swing-application-gui.iml" group="release-test and modules/swing-application-pom and modules" />
-      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/swing-application/swing-application-pom.iml" filepath="$PROJECT_DIR$/codjo-release-test/swing-application/swing-application-pom.iml" group="codjo-release-test and modules/swing-application-pom and modules" />
-      <module fileurl="file://$PROJECT_DIR$/release-test/swing-application/swing-application-pom.iml" filepath="$PROJECT_DIR$/release-test/swing-application/swing-application-pom.iml" group="release-test and modules/swing-application-pom and modules" />
-      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/swing-application/release-test/swing-application-release-test.iml" filepath="$PROJECT_DIR$/codjo-release-test/swing-application/release-test/swing-application-release-test.iml" group="codjo-release-test and modules/swing-application-pom and modules" />
-      <module fileurl="file://$PROJECT_DIR$/release-test/swing-application/release-test/swing-application-release-test.iml" filepath="$PROJECT_DIR$/release-test/swing-application/release-test/swing-application-release-test.iml" group="release-test and modules/swing-application-pom and modules" />
+      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/codjo-release-test.iml" filepath="$PROJECT_DIR$/codjo-release-test/codjo-release-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/swing-application/gui/swing-application-gui.iml" filepath="$PROJECT_DIR$/codjo-release-test/swing-application/gui/swing-application-gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/swing-application/swing-application-pom.iml" filepath="$PROJECT_DIR$/codjo-release-test/swing-application/swing-application-pom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codjo-release-test/swing-application/release-test/swing-application-release-test.iml" filepath="$PROJECT_DIR$/codjo-release-test/swing-application/release-test/swing-application-release-test.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
   <component name="libraryTable">
     <library name="Maven: ant:ant-commons-net:1.6.5">
@@ -727,6 +723,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/regexp/regexp/1.3/regexp-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xalan:serializer:2.7.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.1/serializer-2.7.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.1/serializer-2.7.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.1/serializer-2.7.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: xalan:xalan:2.7.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.1/xalan-2.7.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.1/xalan-2.7.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.1/xalan-2.7.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: xerces:xercesImpl:2.8.1">

@@ -2,20 +2,46 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>codjo-examples</groupId>
-        <artifactId>codjo-release-test</artifactId>
-        <version>1.0</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>codjo-examples</groupId>
     <artifactId>swing-application-pom</artifactId>
+    <version>1.0</version>
     <name>Codjo release-test examples - Swing application - Super POM</name>
     <packaging>pom</packaging>
+
+    <parent>
+        <groupId>net.codjo.pom</groupId>
+        <artifactId>codjo-pom-application</artifactId>
+        <version>2.59</version>
+    </parent>
 
     <modules>
         <module>gui</module>
         <module>release-test</module>
     </modules>
 
+    <repositories>
+        <repository>
+            <id>codjo</id>
+            <url>http://repo.codjo.net/maven2/inhouse</url>
+        </repository>
+
+        <repository>
+            <id>codjo-external</id>
+            <url>http://repo.codjo.net/maven2/external</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>codjo-plugin</id>
+            <url>http://repo.codjo.net/maven2/inhouse</url>
+        </pluginRepository>
+
+        <pluginRepository>
+            <id>codjo-external-plugin</id>
+            <url>http://repo.codjo.net/maven2/external</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>

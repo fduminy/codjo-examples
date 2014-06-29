@@ -1,20 +1,15 @@
 package fr.duminy.examples.codjo.releasetest.swing;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
+
+import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableColumn;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import static javax.swing.JTable.AUTO_RESIZE_OFF;
+
 /**
  *
  */
@@ -24,7 +19,7 @@ public class SwingApplication extends JPanel {
         frame.setContentPane(new SwingApplication());
         frame.pack();
         frame.setVisible(true);
-        frame.setSize(300, 300);
+        frame.setSize(250, 120);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
     }
 
@@ -39,7 +34,7 @@ public class SwingApplication extends JPanel {
         add(new JScrollPane(table), BorderLayout.CENTER);
 
         JButton button = new JButton("Change color");
-        button.setName("changeColor");
+        button.setName("changeColorButton");
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 model.setRed(!model.isRed());
@@ -51,9 +46,9 @@ public class SwingApplication extends JPanel {
 
     private static JTable createTable(final AppTableModel model) {
         JTable table = new JTable(model);
-        table.setName("table");
+        table.setName("colorTable");
 
-        table.setPreferredScrollableViewportSize(new Dimension(250, 200));
+        table.setPreferredScrollableViewportSize(new Dimension(250, 120));
         table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table,

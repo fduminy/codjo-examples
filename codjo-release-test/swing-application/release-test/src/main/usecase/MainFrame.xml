@@ -6,16 +6,19 @@
 
     <description>Test the main screen</description>
     <gui-test>
-        <group name="test initial table">
+        <group name="Checks initial state of the main frame">
             <assertFrame matching="equals" title="Swing application"/>
-            <assertTable name="table" expected="red" row="0" column="English" background="255,0,0"/>
-            <assertTable name="table" expected="rouge" row="0" column="Fran&#231;ais" background="255,0,0"/>
+            <assertTable name="colorTable" expected="red" row="0" column="English" background="255,0,0"/>
+            <assertTable name="colorTable" expected="rouge" row="0" column="Fran&#231;ais" background="255,0,0"/>
 
-            <assertEnabled expected="true" name="changeColor"/>
-            <click name="changeColor"/>
+            <assertEnabled expected="true" name="changeColorButton"/>
+        </group>
 
-            <assertTable name="table" expected="green" row="0" column="0" background="0,255,0"/>
-            <assertTable name="table" expected="vert" row="0" column="1" background="0,255,0"/>
+        <group name="Clicks on the button and checks the result">
+            <click name="changeColorButton"/>
+
+            <assertTable name="colorTable" expected="green" row="0" column="0" background="0,255,0"/>
+            <assertTable name="colorTable" expected="vert" row="0" column="1" background="0,255,0"/>
         </group>
     </gui-test>
 </release-test>

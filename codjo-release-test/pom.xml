@@ -10,12 +10,6 @@
     <name>Codjo release-test examples</name>
     <version>1.0</version>
 
-    <parent>
-        <groupId>codjo-examples</groupId>
-        <artifactId>codjo-examples-pom</artifactId>
-        <version>1.0</version>
-    </parent>
-
     <modules>
         <module>swing-application</module>
     </modules>

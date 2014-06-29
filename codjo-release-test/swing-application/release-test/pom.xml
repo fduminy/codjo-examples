@@ -18,12 +18,6 @@
             <groupId>net.codjo.release-test</groupId>
             <artifactId>codjo-release-test</artifactId>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>xalan</groupId>
-                    <artifactId>xalan</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>codjo-examples</groupId>
@@ -41,8 +35,6 @@
             <plugin>
                 <groupId>net.codjo.maven.mojo</groupId>
                 <artifactId>maven-test-release-plugin</artifactId>
-                <configuration>
-                </configuration>
             </plugin>
         </plugins>
     </build>
